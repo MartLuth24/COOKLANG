@@ -1,0 +1,26 @@
+// Test della gestione degli errori
+procedure: {
+    Int x = 10;
+    Int y = 0;
+
+    // Test divisione per zero
+    // L'interprete segnala l'errore e continua
+    Int z = x / y;      // Errore runtime: divisione per zero
+
+    /*
+    Variabile non dichiarata
+    Il type system segnala l'errore ed il programma non esegue
+    print w;            // Errore di tipo: variabile 'w' usata ma non dichiarata
+    */
+    
+    // Test accesso illegale array
+    // L'interprete segnala l'errore e continua
+    Int[] arr = [1, 2, 3];
+    print arr[0];   
+    print arr[5];       // Errore runtime: indice 5 fuori dai limiti (size=3)
+
+    // Uscita anticipata
+    print "Fine programma";
+    exit;
+    print "Questa riga non viene stampata";
+}

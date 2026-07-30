@@ -1,0 +1,23 @@
+// Simulazione cottura pasta con controllo temperatura
+ingredients:
+    Temp temperaturaAcqua = 20;
+    Int  minutiCottura    = 0;
+    Int  tempoRichiesto   = 10;
+
+procedure: {
+    // Portare l'acqua a ebollizione
+    print "Riscaldamento acqua...";
+    while (temperaturaAcqua < 100) {
+        temperaturaAcqua += 10;
+    }
+    print i"Acqua in ebollizione: ${temperaturaAcqua}°C";
+
+    // Cuocere la pasta
+    print "Cottura pasta in corso...";
+    for minutiCottura from 1 to tempoRichiesto {
+        String stato = (minutiCottura < tempoRichiesto) ? "in cottura" : "pronta!";
+        print i"Minuto ${minutiCottura}: pasta ${stato}";
+    }
+
+    print "Buon appetito!";
+}
