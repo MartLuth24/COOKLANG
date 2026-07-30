@@ -1,1 +1,14 @@
-antlr4-python3-runtime==4.13.1
+# Dipendenze Python di CookLang (installare in un virtual environment).
+#   python3 -m venv .venv
+#   source .venv/bin/activate      # su Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+
+# Runtime ANTLR necessario per ESEGUIRE l'interprete generato.
+antlr4-python3-runtime==4.13.2
+
+# Strumento che fornisce il comando `antlr4` per (ri)GENERARE il parser.
+# Scarica automaticamente il jar di ANTLR (richiede Java 11+).
+antlr4-tools
+
+# Usata da source/tree.py per disegnare l'albero di sintassi a colori.
+rich

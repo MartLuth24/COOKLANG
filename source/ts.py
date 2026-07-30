@@ -11,7 +11,7 @@ tipo non è determinabile a causa di un errore precedente).
 
 from CookLangVisitor import CookLangVisitor
 
-import cooktypes as types
+import cooktype as types
 from interpreter import interpolation_parts, parse_expression
 
 

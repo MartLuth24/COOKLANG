@@ -14,7 +14,7 @@ from CookLangLexer import CookLangLexer
 from CookLangParser import CookLangParser
 from CookLangVisitor import CookLangVisitor
 
-import cooktypes as types
+import cooktype as types
 from memory import Environment
 from errors import CookRuntimeError, ExitSignal
 
