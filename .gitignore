@@ -1,2 +1,36 @@
-.venv
-.antlr
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# 2. File generati da ANTLR
+# ==========================================
+# Ignora i file generati automaticamente in source/
+source/CookLang*.py
+source/CookLang*.tokens
+source/CookLang*.interp
+
+# Se non vuoi tracciare alcuna generazione ANTLR:
+# *.tokens
+# *.interp
+
+# ==========================================
+# 3. IDE e Editor di codice
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+
+# ==========================================
+# 4. Sistema Operativo
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
