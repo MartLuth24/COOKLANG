@@ -1,0 +1,10 @@
+// [test_033.cook] categoria: array
+// Esito atteso: OK
+// Perché: somma di tutti gli elementi di un array
+
+procedure: {
+    Int[] v = [4, 8, 15, 16, 23, 42];
+    Int s = 0;
+    for i from 0 to 5 { s += v[i]; }
+    print i"somma = ${s}";
+}

@@ -1,0 +1,10 @@
+// [test_036.cook] categoria: array
+// Esito atteso: OK
+// Perché: array allocato con new e riempito in un ciclo
+
+procedure: {
+    Int n = 5;
+    Int[] quad = new Int[n];
+    for i from 0 to n - 1 { quad[i] = i * i; }
+    for k from 0 to n - 1 { print i"${k}^2 = ${quad[k]}"; }
+}

@@ -1,0 +1,20 @@
+procedure: {
+    Int[] lista = [10, 20, 30];
+    Int divisore = 0;
+
+    print "Inizio test di verifica errori...";
+
+    // 1. Divisione per zero
+    Int risultato = 50 / divisore; 
+
+    // 2. Indice array fuori dai limiti
+    Int elemento = lista[10]; 
+
+    print "Test completato correttamente.";
+}
+
+
+/* Inizio test di verifica errori...
+Errore a runtime: divisione per zero
+Errore a runtime: indice 10 fuori dai limiti (size=3)
+Test completato correttamente */

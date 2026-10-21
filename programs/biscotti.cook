@@ -1,0 +1,23 @@
+// Ricetta biscotti al burro
+ingredients:
+    Gram farina   = 300;
+    Gram burro    = 150;
+    Gram zucchero = 120;
+    Int  uova     = 2;
+    Int  porzioni = 12;
+
+procedure: {
+    Int nuovePorzioni = 24;
+    Float fattore = nuovePorzioni / porzioni;
+
+    farina   *= fattore;
+    burro    *= fattore;
+    zucchero *= fattore;
+    uova     *= fattore;
+
+    print i"-- Ricetta per ${nuovePorzioni} biscotti";
+    print i"Farina:   ${farina}g";
+    print i"Burro:    ${burro}g";
+    print i"Zucchero: ${zucchero}g";
+    print i"Uova:     ${uova}";
+}

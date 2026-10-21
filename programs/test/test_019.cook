@@ -1,0 +1,18 @@
+// [test_019.cook] categoria: algoritmo
+// Esito atteso: OK
+// Perché: bubble sort di un array di interi
+
+procedure: {
+    Int[] a = [5, 2, 8, 1, 9, 3];
+    Int n = 6;
+    for i from 0 to n - 2 {
+        for j from 0 to n - 2 - i {
+            if (a[j] > a[j + 1]) {
+                Int tmp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = tmp;
+            }
+        }
+    }
+    for k from 0 to n - 1 { print i"a[${k}] = ${a[k]}"; }
+}

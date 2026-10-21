@@ -1,0 +1,8 @@
+// [test_010.cook] categoria: errore-tipo
+// Esito atteso: Errore di tipo
+// Perché: indice dell'array non intero (è un Bool)
+
+procedure: {
+    Int[] a = [1, 2, 3];
+    print a[true];
+}

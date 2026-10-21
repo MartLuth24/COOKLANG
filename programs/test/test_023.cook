@@ -1,0 +1,10 @@
+// [test_023.cook] categoria: algoritmo
+// Esito atteso: OK
+// Perché: massimo di un array
+
+procedure: {
+    Int[] a = [3, 7, 2, 9, 4];
+    Int max = a[0];
+    for i from 1 to 4 { if (a[i] > max) { max = a[i]; } }
+    print i"massimo = ${max}";
+}

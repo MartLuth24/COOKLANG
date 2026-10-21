@@ -1,0 +1,9 @@
+// [test_056.cook] categoria: ternario
+// Esito atteso: OK
+// Perché: ternario annidato
+
+procedure: {
+    Int x = 0;
+    String s = (x > 0) ? "positivo" : ((x < 0) ? "negativo" : "zero");
+    print s;
+}

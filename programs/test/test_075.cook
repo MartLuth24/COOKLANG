@@ -1,0 +1,9 @@
+// [test_075.cook] categoria: incdec
+// Esito atteso: OK
+// Perché: incremento dentro un'espressione (pre)
+
+procedure: {
+    Int x = 5;
+    Int y = ++x + 1;
+    print i"x = ${x}, y = ${y}";
+}

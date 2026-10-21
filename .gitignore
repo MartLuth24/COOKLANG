@@ -1,0 +1,17 @@
+# Virtual Environment e Cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# File generati da ANTLR
+source/InterpLang*.py
+source/InterpLang*.tokens
+source/InterpLang*.interp
+.antlr/
+
+# IDE e OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

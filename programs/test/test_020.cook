@@ -1,0 +1,14 @@
+// [test_020.cook] categoria: algoritmo
+// Esito atteso: OK
+// Perché: massimo comun divisore (algoritmo di Euclide)
+
+procedure: {
+    Int a = 48;
+    Int b = 36;
+    while (b != 0) {
+        Int r = a % b;
+        a = b;
+        b = r;
+    }
+    print i"MCD = ${a}";
+}

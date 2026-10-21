@@ -1,0 +1,8 @@
+// [test_015.cook] categoria: errore-runtime
+// Esito atteso: Errore a runtime
+// Perché: accesso a un indice oltre la fine dell'array
+
+procedure: {
+    Int[] a = [1, 2, 3];
+    print a[5];
+}

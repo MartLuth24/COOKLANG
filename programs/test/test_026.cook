@@ -1,0 +1,10 @@
+// [test_026.cook] categoria: dominio
+// Esito atteso: OK
+// Perché: Ml usato in un'espressione con Int
+
+ingredients:
+    Ml acqua = 500;
+procedure: {
+    Int bicchieri = acqua / 200;
+    print i"bicchieri = ${bicchieri}";
+}

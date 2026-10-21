@@ -1,0 +1,9 @@
+// [test_044.cook] categoria: for
+// Esito atteso: OK
+// Perché: prodotto (fattoriale) con un for
+
+procedure: {
+    Int f = 1;
+    for i from 1 to 6 { f *= i; }
+    print i"6! = ${f}";
+}

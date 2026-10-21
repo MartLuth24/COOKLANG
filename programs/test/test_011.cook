@@ -1,0 +1,7 @@
+// [test_011.cook] categoria: errore-tipo
+// Esito atteso: Errore di tipo
+// Perché: gli estremi del for devono essere interi, non Float
+
+procedure: {
+    for i from 0 to 3.5 { print i; }
+}

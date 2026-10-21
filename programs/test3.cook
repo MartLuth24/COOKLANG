@@ -1,0 +1,25 @@
+procedure: {
+    Int[] arr = [1, 2, 3, 4, 5];
+    Int i = 0;
+    Int j = 4;
+
+    while (i < j) {
+        Int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+
+    print "Array invertito:";
+    for k from 0 to 4 {
+        print i"arr[${k}] = ${arr[k]}";
+    }
+}
+
+/*Array invertito:
+arr[0] = 5
+arr[1] = 4
+arr[2] = 3
+arr[3] = 2
+arr[4] = 1 */

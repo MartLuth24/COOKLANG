@@ -1,0 +1,11 @@
+// [test_022.cook] categoria: algoritmo
+// Esito atteso: OK
+// Perché: potenza base^esponente con un ciclo
+
+procedure: {
+    Int base = 2;
+    Int esp = 10;
+    Int ris = 1;
+    for i from 1 to esp { ris *= base; }
+    print i"${base}^${esp} = ${ris}";
+}

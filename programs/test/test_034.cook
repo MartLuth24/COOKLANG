@@ -1,0 +1,17 @@
+// [test_034.cook] categoria: array
+// Esito atteso: OK
+// Perché: inversione di un array sul posto
+
+procedure: {
+    Int[] a = [1, 2, 3, 4, 5];
+    Int i = 0;
+    Int j = 4;
+    while (i < j) {
+        Int t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+        i++;
+        j--;
+    }
+    for k from 0 to 4 { print i"a[${k}] = ${a[k]}"; }
+}

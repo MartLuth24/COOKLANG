@@ -1,0 +1,10 @@
+// [test_047.cook] categoria: while
+// Esito atteso: OK
+// Perché: somma delle cifre? no: dimezzamento fino a 1
+
+procedure: {
+    Int n = 64;
+    Int passi = 0;
+    while (n > 1) { n = n / 2; passi++; }
+    print i"passi = ${passi}";
+}

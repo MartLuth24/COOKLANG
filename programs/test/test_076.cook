@@ -1,0 +1,9 @@
+// [test_076.cook] categoria: incdec
+// Esito atteso: OK
+// Perché: post-incremento dentro un'espressione
+
+procedure: {
+    Int x = 5;
+    Int y = x++;
+    print i"x = ${x}, y = ${y}";
+}

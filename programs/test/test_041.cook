@@ -1,0 +1,9 @@
+// [test_041.cook] categoria: scoping
+// Esito atteso: OK
+// Perché: un blocco interno modifica una variabile esterna
+
+procedure: {
+    Int contatore = 0;
+    { contatore += 5; }
+    print i"contatore = ${contatore}";
+}

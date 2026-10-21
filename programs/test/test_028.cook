@@ -1,0 +1,10 @@
+// [test_028.cook] categoria: dominio
+// Esito atteso: OK
+// Perché: conversione implicita Gram -> Int in una somma
+
+procedure: {
+    Gram a = 100;
+    Gram b = 150;
+    Int somma = a + b;
+    print i"somma = ${somma}";
+}

@@ -1,0 +1,9 @@
+// [test_040.cook] categoria: scoping
+// Esito atteso: OK
+// Perché: shadowing: la variabile interna nasconde quella esterna
+
+procedure: {
+    Int x = 1;
+    { Int x = 2; print i"interno = ${x}"; }
+    print i"esterno = ${x}";
+}

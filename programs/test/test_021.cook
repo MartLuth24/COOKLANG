@@ -1,0 +1,13 @@
+// [test_021.cook] categoria: algoritmo
+// Esito atteso: OK
+// Perché: verifica se un numero è primo
+
+procedure: {
+    Int n = 29;
+    Bool primo = (n > 1);
+    for d from 2 to n - 1 {
+        if (n % d == 0) { primo = false; }
+    }
+    String esito = primo ? "primo" : "non primo";
+    print i"${n} è ${esito}";
+}

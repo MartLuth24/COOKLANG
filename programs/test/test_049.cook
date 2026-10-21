@@ -1,0 +1,12 @@
+// [test_049.cook] categoria: while
+// Esito atteso: OK
+// Perché: somma dei numeri pari fino a 20
+
+procedure: {
+    Int i = 0;
+    Int s = 0;
+    while (i <= 20) { if (i % 2 == 0) { s += i; } i++; }
+    print i"somma pari = ${s}";
+}
+
+// da rivedere

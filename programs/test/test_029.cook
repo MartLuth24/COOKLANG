@@ -1,0 +1,10 @@
+// [test_029.cook] categoria: dominio
+// Esito atteso: OK
+// Perché: ridimensionamento ricetta con assegnamento composto
+
+ingredients:
+    Gram zucchero = 120;
+procedure: {
+    zucchero *= 2;
+    print i"zucchero = ${zucchero}g";
+}

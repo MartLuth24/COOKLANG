@@ -1,0 +1,9 @@
+// [test_039.cook] categoria: scoping
+// Esito atteso: OK
+// Perché: una variabile locale non è visibile fuori dal blocco
+
+procedure: {
+    Int x = 1;
+    { Int y = 99; print i"dentro: ${y}"; }
+    print i"fuori: ${x}";
+}

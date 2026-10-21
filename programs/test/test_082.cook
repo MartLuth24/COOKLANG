@@ -1,0 +1,10 @@
+// [test_082.cook] categoria: exit
+// Esito atteso: OK
+// Perché: exit dentro un ciclo
+
+procedure: {
+    for i from 1 to 10 {
+        print i"i = ${i}";
+        if (i == 3) { exit; }
+    }
+}

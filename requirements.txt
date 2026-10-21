@@ -1,0 +1,17 @@
+# Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass ( per il copyrigth)
+# & "C:\Users\marti\AppData\Local\Python\pythoncore-3.14-64\python.exe" -m venv .venv ( location of my python.exe)
+
+# Dipendenze Python di InterpLang (installare in un virtual environment).
+#   python3 -m venv .venv
+#   source .venv/bin/activate      # su Windows: .venv\Scripts\activate
+#   pip install -r requirements.txt
+
+# Runtime ANTLR necessario per ESEGUIRE l'interprete generato.
+antlr4-python3-runtime==4.13.2
+
+# Strumento che fornisce il comando `antlr4` per (ri)GENERARE il parser.
+# Scarica automaticamente il jar di ANTLR (richiede Java 11+).
+antlr4-tools
+
+# Usata da source/tree.py per disegnare l'albero di sintassi a colori.
+rich

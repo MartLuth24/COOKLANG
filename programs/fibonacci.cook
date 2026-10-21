@@ -1,0 +1,29 @@
+// Calcolo dei primi N numeri di Fibonacci con array
+procedure: {
+    Int N = 10;
+
+    Int[] fib = new Int[N];
+    fib[0] = 0;
+    fib[1] = 1;
+
+    Int i = 2;
+    while (i < N) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+        i++;
+    }
+
+    print i"Primi ${N} numeri di Fibonacci:";
+    for j from 0 to N - 1 {
+        print i"fib[${j}] = ${fib[j]}";
+    }
+
+    // Scoping: questa variabile locale non è visibile fuori dal blocco
+    {
+        Int somma = 0;
+        for k from 0 to N - 1 {
+            somma += fib[k];
+        }
+        print i"Somma: ${somma}";
+    }
+    // Qui 'somma' non è più accessibile
+}

@@ -1,0 +1,10 @@
+// [test_048.cook] categoria: while
+// Esito atteso: OK
+// Perché: while con condizione composta (&&)
+
+procedure: {
+    Int i = 0;
+    Int j = 10;
+    while (i < 5 && j > 0) { i++; j -= 2; }
+    print i"i = ${i}, j = ${j}";
+}

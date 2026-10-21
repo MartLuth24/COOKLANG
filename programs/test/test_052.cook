@@ -1,0 +1,8 @@
+// [test_052.cook] categoria: if
+// Esito atteso: OK
+// Perché: if annidati (classificazione di un voto)
+
+procedure: {
+    Int voto = 27;
+    if (voto >= 28) { print "ottimo"; } else { if (voto >= 24) { print "buono"; } else { print "sufficiente"; } }
+}
